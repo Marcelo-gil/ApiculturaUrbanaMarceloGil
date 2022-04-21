@@ -5,6 +5,25 @@
 h1 { color: black; position: relative; top: 0;}
 h2 { color: black; margin-top: 3px;}  
 h3 { color: rgb(0, 0, 0); margin-left: 300px;}
+h1{
+  /* text-align: center; */
+  /* recibe eje x (valor - a la derecha + a la izquierda) eje y (+ abajo - arriba)*/
+  /* los % son en base a su posicion original y su tamaño */
+  /* transform: translate( 35%, 50%); */
+  /* text-align: center; */
+  padding: 80px auto 80px auto;
+  /*  para que anime siempre */
+  animation-iteration-count: infinite;
+  /* animation-timing-function: ; */
+  animation-duration: 10s;
+  animation-delay: 2s;
+
+  /*  grados: + a la derecha y - a la izquierda */
+  /*  rotata sobre x, rotatey, rotatez gira sobre las 2*/
+  /* transform: rotatex(180 deg); */
+  /* hace un sum ancho alto + agranda  - achica*/
+  /* transform: scale(2,1); */
+}
 .footer{
   position: fixed;
   border-top: 1px solid #0e0b0c;
@@ -79,8 +98,12 @@ h3 { color: rgb(0, 0, 0); margin-left: 300px;}
   top:0;
   padding: 13px 15px -2;
   margin: 0;
+  transition:  transform 1s ;
   /* border-inline-color: #ff7b00;*/
   /*border-left: 2px none;*/
+}
+.header__menu li:hover{
+  transform: scale(1.5);
 }
 .header__menu li a{
   text-decoration: none;
@@ -199,6 +222,9 @@ textarea{
   list-style: none;
   position: sticky;
   padding: 3%;
+}
+.grid-header__menu li:hover{
+  transform: scale(1.5);
 }
 .grid-header__menu li a{
   text-decoration: none;
