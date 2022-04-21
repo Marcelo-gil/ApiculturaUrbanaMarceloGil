@@ -11,7 +11,7 @@ h3 { color: rgb(0, 0, 0); margin-left: 300px;}
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: #ff7b00;
+  background-image: linear-gradient(180deg, yellow, #ff7b00);
   color:  #0e0b0c;
   text-align: center;
 } 
@@ -47,8 +47,8 @@ h3 { color: rgb(0, 0, 0); margin-left: 300px;}
   list-style: none;
 }
 .header{
-	background-color: #ff7b00;
-	position: sticky;
+  background-image: linear-gradient(180deg, #ff7b00, yellow);
+  position: sticky;
 	top:0;
 	height: 150 px;
   font-size: 15px;
@@ -186,7 +186,7 @@ textarea{
 .grid-header {
   display: grid;
   grid-template-columns: auto auto;
-  background-color: #ff7b00;
+  background-image: linear-gradient(180deg, #ff7b00, yellow);
   position: sticky;
   top:0;
   text-transform: uppercase;
@@ -214,7 +214,7 @@ textarea{
 .grid-footer {
   display:grid;
   grid-template-columns: 1fr 1fr 1fr;
-  background-color: #ff7b00;
+  background-image: linear-gradient(180deg, yellow, #ff7b00)
 }
 .header-area {
   grid-area: cabecera;
