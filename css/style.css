@@ -133,7 +133,7 @@ h1{
 }
 @keyframes mexclafotos{
   0%{
-      background-image: url('../imagenes/colmena1.JPG');
+      background-image: url('../imagenes/colmena1.jpg');
   }
   20%{
       background-image: url('../imagenes/marcos.jpg');
