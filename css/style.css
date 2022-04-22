@@ -113,8 +113,43 @@ h1{
   height: 150px;
   width: 500px;
 }
+.texto{
+  height: 50px;
+  width: 542px;
+}
 .salto{
   height: 75px;
+}
+.animafotos{
+  width: 250px;
+  height: 250px;
+  background-image: url('../imagenes/abeja.png');
+  background-size: cover;
+  animation-name: mexclafotos;
+  animation-iteration-count: infinite;
+  animation-duration: 30s;
+  margin-left: 90px;
+  margin-top: 10px;
+}
+@keyframes mexclafotos{
+  0%{
+      background-image: url('../imagenes/colmena1.JPG');
+  }
+  20%{
+      background-image: url('../imagenes/marcos.jpg');
+  }
+  40%{
+      background-image: url('../imagenes/marcos1.jpg');
+  }
+  60%{
+      background-image: url('../imagenes/extractor.jpg');        
+  }
+  80%{
+      background-image: url('../imagenes/extractorfull.jpg');
+  }   
+  100%{
+    background-image: url('../imagenes/miel.jpg');
+}   
 }
 .mapa{
   border:10;
@@ -290,6 +325,10 @@ textarea{
   .imagenVideo{
     margin-left: 2rem;
   }
+  .texto{
+    width: 450px;
+  }
+  
 }
 @media (max-width: 768px) {
   .contenedor {
@@ -336,5 +375,8 @@ textarea{
   .bodycolmena{
     background: none;
     background-color: #a98307 ;
+  }
+  .texto{
+    width: 350px;
   }
 }
